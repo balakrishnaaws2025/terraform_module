@@ -9,7 +9,6 @@ terraform {
   backend "s3" {
     region         = "ap-south-1"
     bucket         = "aws2025.source.mum.bkt"
-    key            = "terraform/state"
     dynamodb_table = "terraform-lock-table"
         
   }
