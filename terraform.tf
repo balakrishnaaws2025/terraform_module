@@ -6,12 +6,7 @@ terraform {
       version = "5.94.1"
     }
   }
-  backend "s3" {
-    region         = "ap-south-1"
-    bucket         = "aws2025.source.mum.bkt"
-    dynamodb_table = "terraform-lock-table"
-        
-  }
+
 }
 
 provider "aws" {
